@@ -33,6 +33,7 @@ public class Letter {
 		this.height = height;
 		this.letter = letter;
 		this.hp = 10;
+		this.movementSpeed = 3;
 
 		isAlive = true;
 		isPunching = false;
@@ -154,8 +155,12 @@ public class Letter {
 		this.velX = movementSpeed;
 	}
 	
-	public void stop(){
-		velY = velX = 0;
+	public void stopVertical(){
+		velY = 0;
+	}
+	
+	public void stopHorizontal(){
+		velX = 0;
 	}
 
 }

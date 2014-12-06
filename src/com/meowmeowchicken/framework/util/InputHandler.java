@@ -53,7 +53,7 @@ public class InputHandler implements KeyListener, MouseListener {
 
 	@Override
 	public void keyReleased(KeyEvent arg0) {
-		// TODO Auto-generated method stub
+		currentState.onKeyRelease(arg0);
 
 	}
 
